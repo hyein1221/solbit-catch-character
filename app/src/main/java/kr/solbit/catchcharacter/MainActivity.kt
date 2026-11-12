@@ -293,7 +293,7 @@ private fun MainApplication(){
                         }
                         Row(Modifier.fillMaxWidth().padding(14.dp),horizontalArrangement=Arrangement.spacedBy(8.dp)){
                             OutlinedButton(onClick={page=Page.GALLERY},modifier=Modifier.weight(1f)){Text("보관함")}
-                            Button(onClick={startAr},modifier=Modifier.weight(1f)){Text("AR에서 만나기")}
+                            Button(onClick={startAr()},modifier=Modifier.weight(1f)){Text("AR에서 만나기")}
                         }
                     }
                 }
