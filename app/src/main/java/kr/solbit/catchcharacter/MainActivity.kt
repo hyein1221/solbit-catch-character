@@ -188,7 +188,7 @@ private fun MainApplication(){
                         Text("🌟",fontSize=42.sp)
                         Text("우리 반 캐릭터가\n진짜 교실에 나타난다면?",fontSize=25.sp,fontWeight=FontWeight.Black,color=deepBlue,lineHeight=32.sp)
                         Text("그림 촬영 → 풍선 입체화 → AR 자유 탐험",fontSize=13.sp,color=deepBlue)
-                        Button(onClick={startAr},modifier=Modifier.fillMaxWidth(),enabled=!busy){Text("AR 탐험 시작하기")}
+                        Button(onClick={startAr()},modifier=Modifier.fillMaxWidth(),enabled=!busy){Text("AR 탐험 시작하기")}
                     }
                 }
                 Button(onClick={page=Page.GALLERY},modifier=Modifier.fillMaxWidth()) {Text("공동 캐릭터 보관함  (${gallery.count{!it.hidden}})")}
