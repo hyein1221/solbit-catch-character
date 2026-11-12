@@ -14,7 +14,6 @@ jobs:
         with:
           distribution: temurin
           java-version: '21'
-      - uses: android-actions/setup-android@v3
       - name: Install Android SDK 37 and build tools
         run: |
           yes | sdkmanager --licenses >/dev/null || true
